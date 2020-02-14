@@ -9,7 +9,15 @@ repositories {
 dependencies {
   implementation platform("org.springframework.boot:spring-boot-dependencies:2.1.6.RELEASE")
   // We cannot override dependencies!! Why !?!?!?!
+  // I am not sure, but I seem that we can not override version of dependency for elasticsearch...
   implementation 'org.elasticsearch.client:elasticsearch-rest-high-level-client:6.3.2' 
+
+  // We can override dependencies
+  implementation 'com.fasterxml.jackson.core:jackson-core:2.10.2'
+  // We can override dependencies
+  implementation 'io.reactivex.rxjava2:rxjava:2.2.17'
+  // We can override dependencies
+  implementation 'org.hibernate:hibernate-core:5.4.11.Final'
 
   // WORKAROUND:
   // 
