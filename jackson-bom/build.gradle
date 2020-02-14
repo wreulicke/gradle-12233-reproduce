@@ -1,0 +1,13 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+  implementation platform('com.fasterxml.jackson:jackson-bom:2.9.7')
+  // we can override version of this dependency
+  implementation 'com.fasterxml.jackson.core:jackson-annotations:2.9.8' 
+}
