@@ -14,5 +14,5 @@ dependencies {
   // WORKAROUND:
   // 
   // We can override dependency using force = true. But, force is deprecated...
-  // implementation 'org.elasticsearch.client:elasticsearch-rest-high-level-client:6.3.2', { force = true}
+  // implementation 'org.elasticsearch.client:elasticsearch-rest-high-level-client:6.3.2', { force = true }
 }
